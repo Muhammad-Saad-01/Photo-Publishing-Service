@@ -65,6 +65,6 @@ The client needs a website where registered and logged in users can upload pictu
 
 ## Known issues
 - Spring Security with Thymeleaf integration
-  > properly will recreate the project with thymeleaf integration
+  > properly will recreate the project without thymeleaf integration
 
 - Spring Security forbidden authorization for some requests
