@@ -1,17 +1,15 @@
 # Photo Publishing Service
 
-<<<<<<< HEAD
 A demo web application for a Picture Publishing Website built with SpringBoot.
 
 > A Photo Publishing Service that can be used by sellers on an ecommerce website to upload photos of their products. The service is powered by Springboot and has an easy-to-use interface that allows sellers to quickly and easily upload photos and select a category for their products. All submissions are then reviewed by an admin before being approved or declined. This ensures that only high-quality, relevant photos are displayed on the ecommerce website, which can help improve the shopping experience for customers. By using our Photo Publishing Service, sellers can easily showcase their products to potential customers, while the admin can ensure that only the best photos are displayed on the website.
 
 
 
-=======
+
 > A Photo Publishing Service that can be used by sellers on an ecommerce website to upload photos of their products. The service is powered by Springboot and has an easy-to-use interface that allows sellers to quickly and easily upload photos and select a category for their products. All submissions are then reviewed by an admin before being approved or declined. This ensures that only high-quality, relevant photos are displayed on the ecommerce website, which can help improve the shopping experience for customers. By using our Photo Publishing Service, sellers can easily showcase their products to potential customers, while the admin can ensure that only the best photos are displayed on the website.
 
 
->>>>>>> 9fba2a7 (v1)
 ## Overview
  
 The client needs a website where registered and logged in users can upload pictures for acceptance or rejection. An administrator will login and review all submissions. Accepted pictures will be assigned a URL which can be accessed by all users (without login). Rejected pictures have their pictures removed but the metadata remains
@@ -50,12 +48,11 @@ The client needs a website where registered and logged in users can upload pictu
  
 ## Swagger:
     Embedded Swagger Documentation
-<<<<<<< HEAD
+
     
     
   ![img](https://user-images.githubusercontent.com/21185758/210884724-a1597e91-880c-4e13-b527-9628c79b535a.png)
-=======
->>>>>>> 9fba2a7 (v1)
+
 
 ## Deployment:
 - Just load this project on your preferred IDE e.g. Intellij or Netbeans ...etc and Maven will load all dependencies
@@ -74,12 +71,12 @@ The client needs a website where registered and logged in users can upload pictu
 
 ## Known issues
 - Spring Security with Thymeleaf integration
-<<<<<<< HEAD
+
   > properly will recreate the project without thymeleaf integration
 
 - Spring Security forbidden authorization for some requests
-=======
-  > properly will recreate the project with thymeleaf integration
+
+  > properly will recreate the project without thymeleaf integration
 
 - Spring Security forbidden authorization for some requests
->>>>>>> 9fba2a7 (v1)
+
