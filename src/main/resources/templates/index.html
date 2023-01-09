@@ -1,0 +1,92 @@
+<!DOCTYPE html >
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Picture Publishing Service</title>
+    <style>
+        /* Add some basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        /* Style the navigation bar */
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+
+
+        /* Style the container for the input and button */
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            /*background-color: #f1f1f1;*/
+            /*border-radius: 10px;*/
+            /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+
+        }
+
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f705c1b119.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-light">
+
+<div class="container">
+    <main>
+
+        <div class="px-4 py-5 my-5 text-center">
+            <!--            <img class="d-block mx-auto mb-4" src="/uploadIcon.png" alt="" width="72">-->
+
+            <i class="fa-solid fa-cloud-arrow-up fa-5x"></i>
+            <h1 class="display-5 fw-bold">Photo Publishing Service</h1>
+            <div class="col-lg-8 mx-auto">
+                <p class="lead mb-4">This Service allows sellers on an ecommerce website to easily
+                    upload photos of their products and select a category for them. The service is powered by Springboot
+                    and has a user-friendly interface that makes it easy for sellers to submit their photos. All
+                    submissions are then reviewed by an admin before being approved or declined, ensuring that only
+                    high-quality, relevant photos are displayed on the website. This can help improve the shopping
+                    experience for customers and allow sellers to effectively showcase their products. The admin also
+                    has the ability to review and approve or decline submissions, helping to ensure that only the best
+                    photos are displayed on the website.</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <a type="button" class="btn btn-primary btn-lg px-4 gap-3" th:href="@{/login} ">Sign In</a>
+                    <a type="button" class="btn btn-outline-secondary btn-lg px-4" th:href="@{/register}">Sign Up</a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <div class="credits">
+            <i class="fas fa-chevron-left"></i> <i class="fas fa-chevron-right"></i> with <i class="fas fa-heart"></i>
+            by <a href="https://muhammad-saad.net">Muhammad Saad</a>
+        </div>
+    </footer>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
