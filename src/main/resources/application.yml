@@ -1,0 +1,63 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+  port: 8080
+
+spring:
+  profiles:
+    active: dev-postgres
+
+---
+spring:
+  profiles: dev-postgres
+  devtools:
+    livereload:
+      enabled: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5433/yeshtery-pps
+    username: postgres
+    password: admin
+  thymeleaf:
+    cache: false
+    suffix: .html
+    template-loader-path: classpath:/templates
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: false
+  servlet:
+    multipart:
+      max-file-size: 2MB
+      max-request-size: 100MB
+      enabled: true
+  sql:
+    init:
+      mode: always
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  mail:
+    host: localhost
+    port: 1025
+    username: hello
+    password: hello
+
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: "*"
+          auth: true
+          starttls:
+            enable: true
+          connectiontimeout: 5000
+          timeout: 3000
+          writetimeout: 5000
