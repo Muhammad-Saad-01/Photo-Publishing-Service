@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>admin-panel</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <h1>All Uploaded photos</h1>
+    </div>
+    <table class="table table-striped table-hover">
+        <thead class="table-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">name</th>
+            <th scope="col">category</th>
+            <th scope="col">image</th>
+        </tr>
+        </thead>
+        <tbody class="table-group-divider">
+        <tr th:each="photo: ${photos}">
+            <th scope="row" th:text="${photo.getId()}"></th>
+            <td th:text="${photo.getFileName()}"></td>
+            <td th:text="${photo.getCategory()}"></td>
+            <td th:image="${photo.getData()}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
